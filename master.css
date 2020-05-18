@@ -1,0 +1,90 @@
+body{
+   background-image: url("map.jpg");
+
+}
+
+#card{
+    background-color: #1b1919;
+    display: flex ;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 0;
+    border: 1px solid grey;
+    box-shadow: 0 0.7em 0.7em rgb(43, 42, 42);
+    margin: 1.2em;
+    max-height: auto;
+    min-height: 80vh;
+    text-decoration-color: white;
+}
+#card-header h3{
+    font-size: 30px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+#card-header{
+    font-size: 0.7em;
+    padding: 2em 0;
+}
+.map-container{
+    width: 100%;
+    height: 300px;
+    font-family: sans-serif;
+    margin-bottom: 2em;
+}
+#actions button{
+    display: inline-block;
+  border-radius: 4px;
+  background-color: #2bb3c0;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
+#actions button span{
+cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+#actions button span:after{
+     content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#actions button:hover span{
+    padding-right: 25px;
+}
+#actions button:hover span:after{
+     opacity: 1;
+  right: 0;
+}
+.locate{
+   top: 6em;
+   left: 0.5em;
+}
+#text{
+    color: white;
+}
+@media (min-width:600px)
+{
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #card{
+        width:50%;
+        min-width: 35em;
+        align-self: center;
+    }
+}
